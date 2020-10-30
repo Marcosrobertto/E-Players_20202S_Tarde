@@ -20,7 +20,7 @@ body {
     background-color: var(--background);
     font-family: var(--font);
     font-size: 16px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 .header-top {
     width: 100%;
@@ -171,6 +171,41 @@ position: relative;
 .container-about img {
     max-width: 31.875;
 }
+.games-aovivo::after {
+    content: '';
+    border: solid 1px #ffffff;
+    height: 2em;
+    margin-left: 1em;
+}
+.games-aovivo, .games-embreve {
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    font-size: 1.875em;
+    justify-content: space-between;
+}
+.partida {
+    width: 9.5em;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    justify-content: space-between;
+    margin-left: 1em;
+}
+.time1, .time2 {
+    display: flex;
+    align-items: center;
+}
+.partida img {
+    width: 1.8em;
+}
+.time1 img{
+    margin-left: 0.5em;
+}
+.time2 img {
+    margin-left: 0.5em;
+}
+
 
 /* Até 1199px */
 @media screen and (max-width: 74.93em){
