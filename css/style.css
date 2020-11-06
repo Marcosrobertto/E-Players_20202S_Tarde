@@ -118,7 +118,7 @@ img{
 }
 .games{
     width: 100%;
-    height: 7.5em;
+    height: 10em;
     /* background-color: yellow; */
 }
 .games ul{
@@ -127,7 +127,8 @@ img{
     list-style-type: none;
 }
 .games img{
-    width: 170px;
+    max-width: 150px;
+    max-height: 65px;
 }
 .games ul a:hover img{
     transition: 0.5s;
@@ -363,17 +364,163 @@ img{
 
 /* Até 1199px */
 @media screen and (max-width: 74.93em){
-    
+
+    body {
+        font-size: 12px;
+    }
+
+
 }
+
 /* Até 991 */
 @media screen and (max-width: 61.93em){
-    
+
+    .banner-container {
+        width: 100%;
+        height: 30.5em;
+        position: absolute;
+        top: 0;
+    }
+
 }
 /* Até 767 */
-@media screen and (max-width: 47.93em){
+@media screen and (max-width:768px){
     
+
+
+    .header-top {
+        max-width: 13em;
+    }
+
+    .banner-content {
+        align-content: center;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-text {
+        /* background-color: #2ebb496e; */
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+    }
+
+    .banner-container {
+        background-color: #13081359;
+        width: 100%;
+        height: 26.4em;
+        position: absolute;
+        top: 0;
+    }
+
+    .banner-text h1{
+        font-size: 3.5em;
+    }
+    
+    .banner-text p{
+        font-size: 1em;
+    }
+    
+    .banner-text a{
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5em 1.5em;
+        margin-top: 30px;
+        background-color: var(--red);
+        border-radius: 0.8em;
+        font-size: 1.7em;
+    }
+
+    .games{
+        width: 100%;
+        height: 15em;
+    }
+    
+    .games img{
+        max-height: 65px;
+        max-width: 8.4em;
+    }
+    
+    .content-about img{
+        display: none;
+        height: 100%;
+    }
+
+    .text-about {
+        width: 80%;
+        text-align: justify;
+        margin: 9%;
+    }
+
+    .games-aovivo, .games-embreve {
+        font-size: 2em;
+    }
+
+    .games-aovivo {
+        flex-direction: column;
+        text-align: left;
+    }
+    .games-embreve {
+        flex-direction: column;
+    }
+
+    .games h2 {
+        text-decoration: none;
+        padding: 0.1em 0;
+    }
+    .partida {
+        padding: 0.2em 0;
+    }
+    
+    .content-news {
+        justify-content: space-around;
+    }
+
+    .links-footer {
+        flex-direction: column;
+        padding: 2em;
+    }
+    .siga-nos {
+        margin-top: 8em;
+    }
 }
 /* Até 576 */
 @media screen and (max-width: 36em){
     
+    .banner-container{
+        height: 18em;
+    }
+
+    .banner{
+        height: 16em;
+    }
+
+    .banner img{
+        height: 18em;
+    }
+
+
+    .banner-content{
+        width: 70%;
+    }
+
+    .banner-text{
+        width: auto;
+    }
+
+    .content-about{
+        width: 90%;
+
+    }
+
+    .text-about {
+        margin: 7%;
+    }
+
 }
