@@ -365,6 +365,18 @@ img{
 /* Até 1199px */
 @media screen and (max-width: 74.93em){
 
+    .header-top{
+        height: 9.6em;
+    }
+    .header-top img{
+        padding: 1em;
+    }
+
+    .header-top > .flex-spbt-center {
+        flex-direction: column;
+        padding: 1.3em;
+    }
+
     body {
         font-size: 12px;
     }
@@ -382,16 +394,25 @@ img{
         top: 0;
     }
 
+        .banner-text {
+            width: 60%;
+        }
 }
 /* Até 767 */
 @media screen and (max-width:768px){
     
-
-
-    .header-top {
-        max-width: 13em;
+    .header-top > {
+        flex-direction: row;
     }
 
+    .header-top > .flex-spbt-center {
+        flex-direction: row;
+
+    }
+    .menu ul {
+        display: none;
+    }
+    
     .banner-content {
         align-content: center;
         width: 80%;
@@ -523,4 +544,5 @@ img{
         margin: 7%;
     }
 
+    
 }
